@@ -11,15 +11,15 @@
         <p>Please fill out this form with the required information</p>
         <form method="post" action="https://register-demo.freecodecamp.org">
             <fieldset>
-                <label for="first-name">Enter your first name: <input type="text" id="first-name" name="first-name"></label>
-                <label for="last-name">Enter your last name: <input type="text" id="last-name" name="last-name"></label>
-                <label for="email">Enter your email: <input type="email" id="email" name="email"></label>
-                <label for="password">Create a new password: <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"></label>
+                <label for="first-name">Enter your first name: <input type="text" id="first-name" name="first-name" required></label>
+                <label for="last-name">Enter your last name: <input type="text" id="last-name" name="last-name" required></label>
+                <label for="email">Enter your email: <input type="email" id="email" name="email" required></label>
+                <label for="password">Create a new password: <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
             </fieldset>
             <fieldset>
                 <label for="personal"><input type="radio" id="personal" name="account-type"> Personal Account</label>
                 <label for="business"><input type="radio" id="business" name="account-type"> Business Account</label>
-                <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="terms-and-conditions"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+                <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
             </fieldset>
             <fieldset>
                 <label for="profile-picture">Up load a profile picture: <input type="file" id="profile-picture" name="file"></label>
